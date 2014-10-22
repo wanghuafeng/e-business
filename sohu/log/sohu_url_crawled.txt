@@ -1,0 +1,2 @@
+2014-04-24 12:32:26,713 - sohu - DEBUG - url crawled success in http://club.news.sohu.com/minjian/threads/p1?type=all&order=rtime
+2014-04-25 09:02:50,783 - sohu - DEBUG - url crawled success in http://club.news.sohu.com/minjian/threads/p1?type=all&order=rtime

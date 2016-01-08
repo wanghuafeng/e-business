@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<project name="crawler-ds"  default="package"> 
+
+<!-- properies -->
+	<property name="base.dir" value="../crawler-base" />
+    <property name="base.lib.dir" value="${base.dir}/lib" />
+    <property name="src.dir" value="src/main/java" />
+    <property name="lib.dir" value="lib" />
+	<property name="res.dir" value="src/main/resources" />
+	<property name="dist.dir" value="release" />
+	<property name="classes.dir" value="${dist.dir}/classes" />
+	
+    <!-- 定义classpath -->
+    <path id="master-classpath">
+        <fileset dir="${base.lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${base.dir}/${dist.dir}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${res.dir}">
+             <include name="*.*"/>
+         </fileset>
+    </path> 
+ 
+    <!-- 初始化任务 -->
+    <target name="init">
+    	<echo message="${base.lib.dir}"></echo>
+    	<echo message="${lib.dir}"></echo>
+    	<echo message="${base.dir}/${dist.dir}"></echo>
+    	<echo message="${res.dir}"></echo>
+    	<mkdir dir="${dist.dir}" />
+    	<mkdir dir="${dist.dir}/classes" />
+    </target> 
+
+    <!-- 编译 -->
+    <target name="compile" depends="init" description="compile the source files">
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" target="1.7" classpathref="master-classpath" debug="true" debuglevel="lines,source" encoding="UTF-8">
+        </javac>
+    </target> 
+
+    <!-- 打包成jar -->
+    <target name="makejar" depends="compile" description="make .jar file">
+    	<copy includeemptydirs="false" todir="${classes.dir}" >
+    				<fileset dir="${res.dir}">
+    					<exclude name="*.*"/>
+    				</fileset>
+    	</copy>
+        <jar destfile="${dist.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+        	<exclude name="*svn*" />
+        </jar>
+    </target> 
+	
+	<!-- 打包成jar,并删除class目录 -->
+    <target name="package" depends="makejar, clean"/>
+    	
+	
+	<!-- 删除class目录-->
+    <target name="clean">
+        <delete dir="${classes.dir}"/>
+    </target>
+</project> 

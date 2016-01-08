@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+                http://www.springframework.org/schema/beans 
+                http://www.springframework.org/schema/beans/spring-beans.xsd 
+                http://www.springframework.org/schema/util 
+                http://www.springframework.org/schema/util/spring-util.xsd
+                http://www.springframework.org/schema/aop
+                http://www.springframework.org/schema/aop/spring-aop.xsd">	
+       
+      <!-- *****************解析器链***************** -->
+	<bean id="jingdongLoginExtractor" class="com.rong360.crawler.ds.processor.extractor.JingdongLoginExtractor">
+		<property name="postDataManager" ref="postDataManager"/>
+	</bean>
+	
+	<!-- *****************京东订单网页解析器***************** -->			
+	<bean id="jingdongOrderExtractor" class="com.rong360.crawler.ds.processor.extractor.JingdongOrderExtractor">
+		<property name="bloomUriUniqFilter" ref="bloomUriUniqFilter"/>
+	</bean>
+	
+	<!-- *****************京东订单订单存储器***************** -->			
+	<bean id="jingdongOrderStore" class="com.rong360.crawler.ds.processor.store.JingdongOrderStore"/>
+	
+	
+	<!-- *****************淘宝网页解析器***************** -->			
+	<bean id="taobaoOrderExtractor" class="com.rong360.crawler.ds.processor.extractor.TaobaoOrderExtractor"/>
+	
+	<!-- *****************淘宝订单订单存储器***************** -->
+	<bean id="taobaoOrderStore" class="com.rong360.crawler.ds.processor.store.TaobaoOrderStore"/>
+
+	<!--支付宝网页解析器-->
+	<bean id="alipayOrderExtractor" class="com.rong360.crawler.ds.processor.extractor.AlipayOrderExtractor"/>
+	
+		<!-- *****************订单抓取状态存储器***************** -->			
+	<bean id="orderCheckStatusStore" class="com.rong360.crawler.ds.processor.store.OrderCheckStatusStore">
+		<property name="checkStatus" ref="checkStatus"/>
+	</bean>
+	
+</beans>

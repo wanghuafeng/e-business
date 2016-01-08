@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="file:///crawler-base/lib/jericho-html-3.1.jar" />
+    <libelement value="file:///crawler-base/lib/json-20080701.jar" />
+    <libelement value="file:///crawler-base/lib/json-lib-2.4-jdk15.jar" />
+    <libelement value="file:///crawler-base/lib/jsoup-1.6.3.jar" />
+    <libelement value="file:///crawler-base/lib/httpclient-4.2.1.jar" />
+    <libelement value="file:///crawler-base/lib/httpcore-4.2.1.jar" />
+    <libelement value="file:///crawler-base/lib/servlet-api.jar" />
+    <libelement value="file:///crawler-base/lib/commons-beanutils-1.8.0.jar" />
+    <libelement value="file:///crawler-base/lib/commons-codec-1.4.jar" />
+    <libelement value="file:///crawler-base/lib/commons-lang-2.6.jar" />
+    <libelement value="file:///crawler-base/lib/log4j.jar" />
+    <libelement value="file:///crawler-base/lib/spring-aop-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-beans-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-bridge-2.2.0-b14.jar" />
+    <libelement value="file:///crawler-base/lib/spring-context-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-core-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-expression-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/javax.ws.rs-api-2.0.1.jar" />
+    <libelement value="file:///crawler-base/lib/jersey-client.jar" />
+    <libelement value="file:///crawler-base/lib/jersey-common.jar" />
+    <libelement value="file:///crawler-base/lib/jersey-container-servlet-core.jar" />
+    <libelement value="file:///crawler-base/lib/jersey-container-servlet.jar" />
+    <libelement value="file:///crawler-base/lib/jersey-guava-2.17.jar" />
+    <libelement value="file:///crawler-base/lib/jersey-server.jar" />
+    <libelement value="file:///crawler-base/lib/jersey-spring3-2.9.1.jar" />
+    <libelement value="file:///crawler-base/lib/antlr-2.7.7.jar" />
+    <libelement value="file:///crawler-base/lib/aopalliance-1.0.jar" />
+    <libelement value="file:///crawler-base/lib/aspectjweaver.jar" />
+    <libelement value="file:///crawler-base/lib/commons-collections-3.2.1.jar" />
+    <libelement value="file:///crawler-base/lib/commons-configuration-1.8.jar" />
+    <libelement value="file:///crawler-base/lib/commons-dbcp-1.3.jar" />
+    <libelement value="file:///crawler-base/lib/commons-exec-1.1.jar" />
+    <libelement value="file:///crawler-base/lib/commons-io-1.4.jar" />
+    <libelement value="file:///crawler-base/lib/commons-lang3-3.1.jar" />
+    <libelement value="file:///crawler-base/lib/commons-logging-1.1.3.jar" />
+    <libelement value="file:///crawler-base/lib/commons-pool-1.5.4.jar" />
+    <libelement value="file:///crawler-base/lib/commons-tools.jar" />
+    <libelement value="file:///crawler-base/lib/crawler-commons-1.0-SNAPSHOT.jar" />
+    <libelement value="file:///crawler-base/lib/cssparser-0.9.9.jar" />
+    <libelement value="file:///crawler-base/lib/dom4j-1.6.1.jar" />
+    <libelement value="file:///crawler-base/lib/ezmorph-1.0.6.jar" />
+    <libelement value="file:///crawler-base/lib/guava-11.0.2.jar" />
+    <libelement value="file:///crawler-base/lib/hibernate-commons-annotations-4.0.4.Final.jar" />
+    <libelement value="file:///crawler-base/lib/hibernate-core-4.3.5.Final.jar" />
+    <libelement value="file:///crawler-base/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+    <libelement value="file:///crawler-base/lib/hk2-api-2.4.0-b10.jar" />
+    <libelement value="file:///crawler-base/lib/hk2-locator-2.4.0-b10.jar" />
+    <libelement value="file:///crawler-base/lib/hk2-utils-2.4.0-b10.jar" />
+    <libelement value="file:///crawler-base/lib/htmlunit-2.12.jar" />
+    <libelement value="file:///crawler-base/lib/htmlunit-core-js-2.12.jar" />
+    <libelement value="file:///crawler-base/lib/httpmime-4.2.4.jar" />
+    <libelement value="file:///crawler-base/lib/jackson-all-1.9.11.jar" />
+    <libelement value="file:///crawler-base/lib/jandex-1.1.0.Final.jar" />
+    <libelement value="file:///crawler-base/lib/javassist-3.18.1-GA.jar" />
+    <libelement value="file:///crawler-base/lib/javax.annotation-api-1.2.jar" />
+    <libelement value="file:///crawler-base/lib/javax.inject-2.4.0-b10.jar" />
+    <libelement value="file:///crawler-base/lib/jboss-logging-3.1.3.GA.jar" />
+    <libelement value="file:///crawler-base/lib/jboss-logging-annotations-1.2.0.Beta1.jar" />
+    <libelement value="file:///crawler-base/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" />
+    <libelement value="file:///crawler-base/lib/jdom.jar" />
+    <libelement value="file:///crawler-base/lib/jedis-2.1.0.jar" />
+    <libelement value="file:///crawler-base/lib/mysql-connector-java-5.1.6-bin.jar" />
+    <libelement value="file:///crawler-base/lib/nekohtml-1.9.18.jar" />
+    <libelement value="file:///crawler-base/lib/sac-1.3.jar" />
+    <libelement value="file:///crawler-base/lib/spring-aspects-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-context-support-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-instrument-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-jdbc-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-jms-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-messaging-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-orm-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-oxm-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-test-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-tx-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-web-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-webmvc-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-webmvc-portlet-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/spring-websocket-4.1.2.RELEASE.jar" />
+    <libelement value="file:///crawler-base/lib/validation-api-1.1.0.Final.jar" />
+    <libelement value="file:///crawler-base/lib/xalan-2.7.1.jar" />
+    <libelement value="file:///crawler-base/lib/xercesImpl-2.10.0.jar" />
+    <libelement value="file:///crawler-base/lib/xml-apis-1.4.01.jar" />
+    <libelement value="file:///crawler-base/lib/junit-4.7.jar" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src/main/java" expected_position="0" />
+      <src_folder value="file://$MODULE_DIR$/src/main/test" expected_position="1" />
+      <src_folder value="file://$MODULE_DIR$/src/main/resources" expected_position="2" />
+    </src_description>
+  </component>
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <dependency>fileset==crawler-base</dependency>
+          <file>file://$MODULE_DIR$/src/main/resources/crawler-ds-api.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/crawler-ds-cookie.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/crawler-ds-processor.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/crawler-ds-rule.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/test" isTestSource="true" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="module" module-name="crawler-base" />
+  </component>
+</module>

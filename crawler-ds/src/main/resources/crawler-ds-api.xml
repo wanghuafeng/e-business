@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+                http://www.springframework.org/schema/beans 
+                http://www.springframework.org/schema/beans/spring-beans.xsd 
+                http://www.springframework.org/schema/util 
+                http://www.springframework.org/schema/util/spring-util.xsd
+                http://www.springframework.org/schema/aop
+                http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+	<!--*******************全局变量定义**********-->
+	<bean id="dsCrawlerConstant" class="com.rong360.crawler.CrawlerConfigurableProperties">
+		<constructor-arg index="0">
+			<util:map key-type="java.lang.String" value-type="java.lang.Object">
+				<entry key="tb.use.proxy">
+					<value type="java.lang.Boolean">${tb.use.proxy}</value>
+				</entry>
+			</util:map>
+		</constructor-arg>
+	</bean>
+
+    	       	<!-- *****************检查抓取状态记录***************** -->
+	<bean id="checkStatus" class="com.rong360.crawler.ds.status.CheckStatus"/>
+
+
+         	<!-- *****************检查抓取状态服务***************** -->
+	<bean id="checkStatusService" class="com.rong360.crawler.ds.service.impl.CheckStatusServiceImpl">
+			<property name="checkStatus" ref="checkStatus"/>
+	</bean>
+
+         	<!-- *****************京东用户登录服务***************** -->
+	<bean id="jdLoginService" class="com.rong360.crawler.ds.service.impl.JDLoginServiceImpl">
+			<property name="fetcher" ref="fetcher"/>
+			<property name="postDataManager" ref="postDataManager"/>
+		    <property name="jingdongSavePostDataRuler" ref="jingdongSavePostDataRuler"/>
+		    <property name="loginSuccessRuler" ref="dsLoginSuccessRuler"/>
+	</bean>
+
+             	<!-- *****************淘宝用户登录服务***************** -->
+	<bean id="taobaoLoginService" class="com.rong360.crawler.ds.service.impl.TaoBaoLoginServiceImpl">
+			<property name="fetcher" ref="fetcher"/>
+			<property name="postDataManager" ref="postDataManager"/>
+			<property name="savePostDataRuler" ref="taoBaoSavePostDataRuler"/>
+		    <property name="loginSuccessRuler" ref="dsLoginSuccessRuler"/>
+	</bean>
+
+
+          	<!-- *****************淘宝PC用户登录服务***************** -->
+	<bean id="taobaoPCLoginService" class="com.rong360.crawler.ds.service.impl.TaoBaoPCLoginServiceImpl">
+			<property name="fetcher" ref="fetcher"/>
+			<property name="postDataManager" ref="postDataManager"/>
+			<property name="savePostDataRuler" ref="taoBaoPCSavePostDataRuler"/>
+	</bean>
+
+</beans>

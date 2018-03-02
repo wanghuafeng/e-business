@@ -12,6 +12,6 @@ CREATE TABLE `douban_books` (
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`),
   KEY `idx_s` (`score`),
-     KEY `idx_ccnt` (`comment_count`),
+  KEY `idx_ccnt` (`comment_count`),
   KEY `idx_uptime` (`update_time`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='豆瓣图书爬虫';

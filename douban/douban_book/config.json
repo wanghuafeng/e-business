@@ -1,0 +1,13 @@
+{
+    "resultdb": "mysql+resultdb://127.0.0.1/douban_books",
+    "taskdb": "mysql+taskdb://127.0.0.1/task",
+    "message_queue": "redis://127.0.0.1:6379/0",
+    "queue-maxsize": 600,
+    "debug": true,
+    "webui": {
+        "port": 510001
+    }
+//    "result_worker": {
+//        "result_cls": "rlibs.JdbResultWorker.JdbResultWorker"
+//    }
+}

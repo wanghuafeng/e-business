@@ -1,13 +1,11 @@
 {
-    "resultdb": "mysql+resultdb://127.0.0.1/douban_books",
-    "taskdb": "mysql+taskdb://127.0.0.1/task",
+    "resultdb": "mysql+resultdb://root:root@127.0.0.1:3306/resultdb",
+    "taskdb": "mysql+taskdb://root:root@127.0.0.1:3306/taskdb",
+    "projectdb": "mysql+projectdb://root:root@127.0.0.1:3306/projectdb",
     "message_queue": "redis://127.0.0.1:6379/0",
     "queue-maxsize": 600,
     "debug": true,
     "webui": {
-        "port": 510001
+        "port": 51001
     }
-//    "result_worker": {
-//        "result_cls": "rlibs.JdbResultWorker.JdbResultWorker"
-//    }
 }

@@ -7,7 +7,4 @@
     "webui": {
         "port": 510001
     }
-//    "result_worker": {
-//        "result_cls": "rlibs.JdbResultWorker.JdbResultWorker"
-//    }
 }
